@@ -26,8 +26,8 @@ block content
               li.link
                 a(href=link.href) #{link.displayName}
                 a(href="/places/" + place.id + "/links/" + link.id + "/destroy") Destroy
-            li
-              | Add Link:
+            li.form
+              p Add Link
               form(action="/places/" + place.id + "/links/create", method="post", style="display: inline")
                 input(type="text", name="displayName" placeholder="Title")
                 input(type="text", name="href" placeholder="Link")

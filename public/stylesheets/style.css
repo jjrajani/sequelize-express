@@ -35,13 +35,13 @@ h1 {
 }
 .right {
   width: 80%;
-  border: solid purple 2px;
 }
 
 .right > ul {
   list-style: none;
   padding: 5%;
   margin: 0;
+  background-color: #ddd;
 }
 
 .right > ul > li {
@@ -51,6 +51,14 @@ h1 {
   border: solid #777 1px;
   padding: 10px 20px;
   border-radius: 7px;
+  margin: 40px 0;
+  background-color: #eee;
+}
+.right > ul > li:first-child {
+  margin-top: 20px;
+}
+.right > ul > li:last-child {
+  margin-bottom: 20px;
 }
 
 .right > ul > li > p.title,
@@ -82,6 +90,7 @@ h1 {
 .right > ul > li > img {
   width: 100%;
   height: 100%;
+  border-radius: 7px;
 }
 
 .right > ul > li > ul {
@@ -97,6 +106,9 @@ h1 {
   list-style: none;
   margin: 0;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right > ul > li > ul > li.link {
@@ -112,4 +124,28 @@ h1 {
 
 li.link > a {
 
+}
+
+.right > li.form {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid purple 1px;
+}
+
+li.form > p {
+  display: inline;
+  width: 15%;
+  margin: 10px 5px 10px 2.5%;
+}
+li.form > form {
+  width: 80%;
+}
+li.form > form > input {
+  margin: 0 2%;
+  width: 36%;
+}
+
+li.form > form > input[type="submit"] {
+  margin: 0 2%;
+  width: 16%;
 }

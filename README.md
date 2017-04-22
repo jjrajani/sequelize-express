@@ -9,10 +9,8 @@ to instal - `npm install`
 to serve app - `./bin/www`
 
 #### Includes Models:
-* __Places__
-  have many links
-* __Links__
-    belong to one place
+* __Places__ have many links
+* __Links__ belong to one place
 
 #### Has routes for:
 * Creating/Deleting places
