@@ -6,6 +6,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
   flex-wrap: wrap;
+  background-color: #eee;
 }
 a {
   color: #00B7FF;
@@ -13,16 +14,16 @@ a {
 h1 {
   text-align: center;
   margin: 0;
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: #222;
   color: #788;
   width: 100%;
 }
 .left {
   width: 20%;
-  background-color: #eee;
-  border: solid 1px #aaa;
   padding: 10px;
+  position: fixed;
+  top: 73px;
 }
 .left > h2 {
   font-size: 1rem;
@@ -35,6 +36,8 @@ h1 {
 }
 .right {
   width: 80%;
+  margin: 0 0 0 20%;
+  border-left: solid 1px #aaa;
 }
 
 .right > ul {
