@@ -2,8 +2,10 @@
 
 An example app using Express and Sequelize with Jade views.
 
-to instal run `npm install` on command line
-to serve app run `./bin/www` on command line
+__on command line run:__
+to instal - `npm install`
+
+to serve app - `./bin/www`
 
 ##### Includes Models:
 * __Places__
