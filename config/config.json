@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "1989Felix",
-    "database": "travel_locations",
-    "host": "localhost",
+    "password": "null",
+    "database": "database_dev",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
