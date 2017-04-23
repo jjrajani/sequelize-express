@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1= title
+  a(href="/") #{title}
   div.left
     h2 Add Place
     form(action="/places/create", method="post")
@@ -15,7 +15,7 @@ block content
     ul
       each place in places
         li
-          p.title=place.title
+          a(href="place/" + place.id) place.title
           p.desire=place.desire
           img(src=place.img)
           p.description=place.description
