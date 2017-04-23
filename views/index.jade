@@ -12,10 +12,11 @@ block content
       input(type="submit")
 
   div.right
+    h2 List
     ul
       each place in places
         li
-          a(href="place/" + place.id) place.title
+          a.title(href="place/" + place.id) #{place.title}
           p.desire=place.desire
           img(src=place.img)
           p.description=place.description
