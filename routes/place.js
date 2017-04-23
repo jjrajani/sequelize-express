@@ -14,9 +14,17 @@ router.get('/:place_id', function(req, res) {
 /* POST update place. */
 router.post('/:place_id/update', function(req, res) {
   let update = validateUpdate(req.body);
-  models.Place.update(update, { where: {_id: req.params.place_id}
+  models.Place.update(update, { where: {id: req.params.place_id}
   }).then(function(place) {
-    renderPlace(res, place);
+    console.log("===================")
+    console.log("===================")
+    console.log("===================")
+    console.log("after update", place)
+    console.log("===================")
+    console.log("===================")
+    console.log("===================")
+    // renderPlace(res, place);
+    res.redirect('/place/' + place);
   });
 });
 
@@ -32,9 +40,9 @@ var renderPlace = function(res, place) {
 
 var validateUpdate = function(body) {
   let update = {};
-  Object.keys(req.body).forEach((key) => {
-    if (req.body[key] !== "") {
-      update[key] = req.body[key];
+  Object.keys(body).forEach((key) => {
+    if (body[key] !== "") {
+      update[key] = body[key];
     }
   });
   return update;
