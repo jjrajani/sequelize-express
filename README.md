@@ -15,3 +15,7 @@ to serve app - `./bin/www`
 #### Has routes for:
 * Creating/Deleting places
 * Creating/Deleting links
+
+
+##### Local database setup required.
+Use mysql to create a local database on your machine then navigate to config/config.json and update to your needs.
