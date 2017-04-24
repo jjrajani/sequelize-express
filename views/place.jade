@@ -25,7 +25,7 @@ block content
           p Links
           each link in place.Links
             li.link
-              a(href=link.href) #{link.displayName}
+              a(href=link.href target="blank") #{link.displayName}
               a(href="/places/" + place.id + "/links/" + link.id + "/destroy") Destroy
           li.form
             p Add Link
