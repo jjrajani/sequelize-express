@@ -37,6 +37,8 @@ body > a {
 .left > form > input {
   margin: 10px 2.5% 0;
   width: 95%;
+}
+form > input {
   line-height: 1.2rem;
   padding-left: 8px;
   border: solid 1px #ccc;
@@ -47,7 +49,8 @@ body > a {
   border-top: solid 2px #748CAB;
   padding-bottom: 10px;
 }
-.left > form > input[type="submit"] {
+/*.left > form > input[type="submit"] {*/
+input[type="submit"] {
   border: solid 1px #ccc;
   border-radius: 4px;
   background-color: #748CAB;
@@ -88,7 +91,7 @@ body > a {
   background-color: #eee;
 }
 .right > ul > li.single > .title {
-  background-color: #0062AD;;
+  background-color: #3E5C76;;
   color: #F3F3F3;
 }
 
@@ -200,10 +203,13 @@ li.form > form {
 }
 li.form > form > input {
   margin: 0 2%;
-  width: 36%;
+  width: 29.3%;
+  border-radius: 4px;
 }
 
-li.form > form > input[type="submit"] {
+/*li.form > form > input[type="submit"] {*/
+/*input[type="submit"] {*/
+[type="submit"] {
   margin: 0 2%;
   width: 16%;
 }
