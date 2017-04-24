@@ -12,9 +12,10 @@ block content
       input(type="submit")
 
   div.right
-    h2 Edit
+    h2.title Edit
+    a(href="/") <-- List View
     ul
-      li
+      li.single
         p.title=place.title
         p.desire=place.desire
         img(src=place.img)
