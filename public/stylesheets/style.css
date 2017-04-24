@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: #eee;
+  background-color: #1D2D44;
 }
 a {
   color: #00B7FF;
@@ -16,7 +17,7 @@ body > a {
   margin: 0;
   padding: 20px 0;
   background-color: #222;
-  color: #788;
+  color: #F0EBDE;
   width: 100%;
   text-decoration: none;
   font-size: 1.4rem;
@@ -31,10 +32,27 @@ body > a {
   font-size: 1rem;
   margin: 0;
   padding: 0 0 10px;
+  color: #F0EBDE;
 }
 .left > form > input {
-    margin: 10px 5% 0;
-    width: 90%;
+  margin: 10px 2.5% 0;
+  width: 95%;
+  line-height: 1.2rem;
+  padding-left: 8px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+}
+.left > form {
+  border-bottom: solid 2px #748CAB;
+  border-top: solid 2px #748CAB;
+  padding-bottom: 10px;
+}
+.left > form > input[type="submit"] {
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  background-color: #748CAB;
+  font-weight: 400;
+  color: #F0EBD8;
 }
 .right {
   width: 80%;
@@ -44,7 +62,7 @@ body > a {
 
 .right > .title {
   text-align: center;
-  color: #666;
+  color: #0D1321;
   background-color: #cbcbcb;
   margin: 0;
   padding: 20px 0;
@@ -56,6 +74,7 @@ body > a {
   padding: 5%;
   margin: 0;
   background-color: #ddd;
+  background-color: #3E5C76;
 }
 
 .right > ul > li {
